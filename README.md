@@ -23,7 +23,6 @@ No external dependencies are required, making this project lightweight and easy 
 
 ---
 
-## Installation
 
 1. **Clone the repository**
 
@@ -50,3 +49,57 @@ No external dependencies are required, making this project lightweight and easy 
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 
+
+## The implementation of the project :
+1. Create Project Structure
+Open Command Prompt (cmd) and run:
+cmd
+mkdir factwise-python
+cd factwise-python
+mkdir db implementation base
+type nul > db\users.json
+type nul > db\teams.json
+type nul > db\boards.json
+type nul > implementation\__init__.py
+type nul > base\user_base.py
+type nul > base\team_base.py
+type nul > base\project_board_base.py
+type nul > test.py
+
+2. Initialize JSON Files
+cmd
+echo [] > db\users.json
+echo [] > db\teams.json
+echo [] > db\boards.json
+
+3. Add Code to Files
+Copy the code provided earlier into each corresponding file:
+base/user_base.py
+base/team_base.py
+base/project_board_base.py
+implementation/user_manager.py
+implementation/team_manager.py
+implementation/board_manager.py
+test.py
+
+4. Run the Project
+cmd
+python test.py
+
+5.Output:
+ Starting Team Project Planner Test Suite
+ Managers initialized successfully
+
+=== Testing User Creation ===
+{"status": "success", "user": {...}, "timestamp": ...}
+
+=== Testing Team Creation ===
+{"status": "success", "team": {...}, "timestamp": ...}
+
+=== Testing Task Creation ===
+{"status": "success", "task": {...}, "timestamp": ...}
+
+=== Final System State ===
+Users: [...]
+Teams: [...]
+Tasks: [...]
